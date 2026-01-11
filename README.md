@@ -14,10 +14,12 @@ mvn clean package``
 # Usage
 
 ### General Syntax
--a <num> -b <num> -op <operation>
+``java -jar target/ZenCalc-1.jar -a (Num) -b (Num) -op (Operation)``
 
 #### Options
-``add: Addition
+``-a/--alpha
+-b/--beta
+add: Addition
 sub: Subtraction
 mul: Multiplication
 div: division``
