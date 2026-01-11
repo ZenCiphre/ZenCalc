@@ -1,0 +1,20 @@
+# Maven Build Output
+target/
+dependency-reduced-pom.xml
+
+# Eclipse Project Files
+.classpath
+.project
+.settings/
+.factorypath
+bin/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Mac/OS
+.DS_Store
