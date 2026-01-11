@@ -1,4 +1,4 @@
-# Zen series level 0: ZenCalc
+# Zen series: ZenCalc
 
 A CLI calcultor made with Java 21, Picocli and Maven.
 
