@@ -14,7 +14,7 @@ mvn clean package``
 # Usage
 
 ### General Syntax
-``java -jar target/ZenCalc-1.jar -a (Num) -b (Num) -op (Operation)``
+``java -jar target/ZenCalc.jar -a (Num) -b (Num) -op (Operation)``
 
 #### Options
 ``-a/--alpha
@@ -25,7 +25,7 @@ mul: Multiplication
 div: division``
 
 ### Example
-``java -jar target/ZenCalc-1.jar -a 10 -b 5 -op mul``
+``java -jar target/ZenCalc.jar -a 10 -b 5 -op mul``
 
 # Using the helper script
 

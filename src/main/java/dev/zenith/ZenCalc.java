@@ -25,18 +25,7 @@ public class ZenCalc implements Callable<Integer> {
     double result = 0;
 
     try {
-      result = switch (op.toLowerCase()) {
-        case "add" -> a + b;
-        case "sub" -> a - b;
-        case "mul" -> a * b;
-        case "div" -> {
-          if (b == 0)
-            throw new ArithmeticException("Cannot divide by Zero.");
-          yield a / b;
-        }
-        default -> throw new IllegalArgumentException("Unknown operation " + op);
-      };
-
+      result = calculate(a, b, op);
       System.out.printf("ZenCalc Result: %.2f%n", result);
       return 0;
 
@@ -44,6 +33,21 @@ public class ZenCalc implements Callable<Integer> {
       System.out.println("Error: " + e.getMessage());
       return 1;
     }
+  }
+
+  public double calculate(double a, double b, String op) {
+    return switch (op.toLowerCase()) {
+      case "add" -> a + b;
+      case "sub" -> a - b;
+      case "mul" -> a * b;
+      case "div" -> {
+        if (b == 0)
+          throw new ArithmeticException("Cannot divide by Zero.");
+        yield a / b;
+      }
+      default -> throw new IllegalArgumentException("Unknown operation " + op);
+    };
+
   }
 
   public static void main(String[] args) {
